@@ -1,0 +1,39 @@
+{
+  "career": [
+    {
+      "name": "SS Transways",
+      "href": "https://sstranswaysindia.com/",
+      "title": "Software Engineer Intern",
+      "logo": "/img/sstransways.png",
+      "start": "May 2025",
+      "end": "Aug 2025",
+      "description": [
+        "Built and deployed a cross-platform attendance app with React Native, Node.js, and Firebase, enabling 400+ drivers and supervisors to log shifts, reducing payroll discrepancies by 25%.",
+        "Developed a web dashboard using React, Express.js, and MySQL, deployed on AWS EC2 with Nginx, giving managers real-time access to attendance, saving an estimated $50K annually by reducing overtime disputes."
+      ]
+    },
+    {
+      "name": "Department of Physics, Arizona State University",
+      "href": "https://physics.asu.edu/",
+      "title": "Backend Developer",
+      "logo": "/img/deptOfPhy.png",
+      "start": "Apr 2023",
+      "description": [
+        "Built and deployed a space/asset management system with SQL, Node.js, Express, and AWS EC2, used by 50+ staff to support 1,000+ students, saving the department $10K+ annually.",     
+        "Created RESTful APIs with Express on a secure MongoDB backend to streamline reporting and workflows, cutting manual admin work by 40%."
+      ]
+    },
+    {
+      "name": "Ford",
+      "href": "https://www.ford.com/",
+      "title": "Software Developer Intern",
+      "logo": "/img/ford.jpg",
+      "start": "May 2024",
+      "end": "Aug 2024",
+      "description": [
+        "Reduced API response latency by 40% by refactoring legacy endpoints into microservices using Java + Spring Boot and introducing asynchronous processing, enabling fleet and commercial services to improve system throughput.",
+        "Improved deployment efficiency by automating backend service rollouts using Docker and Kubernetes on Ford’s cloud platform, which reduced manual errors and sped up release cycles by 20%."
+      ]
+    }
+  ]
+}

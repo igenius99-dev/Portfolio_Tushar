@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "name": "Indian Students Association",
+      "description": "Full stack web application for the Indian Students Association club with 2000+ users and 15+ events",
+      "image": "/img/ISA.png",
+      "tags": [
+        "ReactJS",
+        "ExpressJS",
+        "PostgreSQL",
+        "NodeJS",
+        "TailwindCSS",
+        "AWS EC2"
+        
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://isa-hazel.vercel.app",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
+      "name": "MenuMaven",
+      "description": "Meal planner by cicking menu pictures and choosing iteams to meet caloric and protein goals.",
+      "image": "/img/MenuMaven.png",
+      "tags": [
+        "NextJS",
+        "JavaScript",
+        "Spring Boot",
+        "MongoDB",
+        "OpenAI"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/igenius99-dev/Nutrition_calculator",
+          "icon": "github"
+        }
+      ]
+    }
+  ]
+}

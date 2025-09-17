@@ -1,0 +1,28 @@
+{
+  "education": [
+    {
+      "name": "Arizona State University, Tempe",
+      "href": "https://www.asu.edu/",
+      "title": "BS in Computer Science",
+      "logo": "/img/ASU-logo.png",
+      "start": "Aug 2022",
+      "description": [
+        "Graduated with a Major in Computer Science",
+        "Directory of IT for Indian Students Association club",
+        "Maintained a perfect 4.0 GPA throughout college."
+      ]
+    },
+    {
+      "name": "Delhi Public School, Kanpur",
+      "href": "https://dpsbarra.com/",
+      "title": "Higher Secondary School with Computer Science",
+      "logo": "/img/dps.png",
+      "start": "April 2019",
+      "end": "May 2021",
+      "description": [
+        "Won largest robowars in India at IIT Bombay under school mentorship",
+        "Co founder of the school's Computer Science club"
+      ]
+    }
+  ]
+}

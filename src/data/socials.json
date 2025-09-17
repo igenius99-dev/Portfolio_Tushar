@@ -1,0 +1,19 @@
+{
+  "socials": [
+    {
+      "name": "LinkedIn",
+      "href": "https://www.linkedin.com/in/tushar-sachan-390a62383",
+      "icon": "linkedin"
+    },
+    {
+      "name": "GitHub",
+      "href": "https://github.com/igenius99-dev",
+      "icon": "github"
+    },
+    {
+      "name": "Email",
+      "href": "mailto:tusharsachan06@gmail.com",
+      "icon": "mail"
+    }
+  ]
+}
