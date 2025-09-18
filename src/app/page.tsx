@@ -1,6 +1,7 @@
 import Experience from "@/components/Experience";
 import LinkWithIcon from "@/components/LinkWithIcon";
 import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 import Socials from "@/components/Socials";
 import SwipeCards from "@/components/SwipeCards";
 import { Button } from "@/components/ui/Button";
@@ -25,11 +26,11 @@ export default async function Home() {
 
         <div className="flex max-w-[320px] flex-col sm:max-w-full">
           <h1 className="title text-balance text-4xl sm:text-5xl">
-            Hi, I&apos;m Tushar. 👋
+            Hi, I&apos;m Tushar.
           </h1>
 
           <p className="mt-2 whitespace-nowrap text-sm font-medium sm:text-base">
-            Software Engineer from Tempe, AZ! 🌵
+            Software Engineer from Tempe, AZ! 
           </p>
 
           <p className="mt-4 max-w-sm text-balance text-sm sm:text-base">
@@ -47,7 +48,7 @@ export default async function Home() {
           <p className="mt-1 text-xs font-light">
             For escalations, please find my
             <Link
-              href="https://www.instagram.com/gomugomu.cat"
+              href="https://www.instagram.com/tushar_sachan1"
               target="_blank"
               className="link font-semibold"
               title="meow"
@@ -68,6 +69,8 @@ export default async function Home() {
           </section>
         </div>
       </section>
+
+  
 
       <Experience />
 
