@@ -23,6 +23,18 @@
         "Won largest robowars in India at IIT Bombay under school mentorship",
         "Co founder of the school's Computer Science club"
       ]
+    },
+    {
+      "name": "Virendra Swarup Education Centre,Kidwai Nagar,Kanpur",
+      "href": "https://vsec.in/",
+      "title": "Higher School with Computer Science",
+      "logo": "/img/VSEC.jpeg",
+      "start": "April 2014",
+      "end": "May 2019",
+      "description": [
+        "Mentored classmates in Java and Python",
+        "Built a strong foundation in Raspberry Pi, Arduino, and open CV."
+      ]
     }
   ]
 }

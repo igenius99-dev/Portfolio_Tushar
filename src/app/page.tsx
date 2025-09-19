@@ -53,7 +53,7 @@ export default async function Home() {
               className="link font-semibold"
               title="meow"
             >
-              &nbsp;Tushar Lead&nbsp;
+              &nbsp;Instagram&nbsp;
             </Link>
             instead.
           </p>
@@ -71,12 +71,12 @@ export default async function Home() {
       </section>
 
   
-
+      <Skills />
       <Experience />
 
       <section className="flex flex-col gap-8">
         <div className="flex justify-between">
-          <h2 className="title text-2xl sm:text-3xl">featured projects</h2>
+          <h2 className="title text-2xl sm:text-3xl">Featured Projects</h2>
           <LinkWithIcon
             href="/projects"
             position="right"

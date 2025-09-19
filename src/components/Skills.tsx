@@ -1,55 +1,33 @@
+"use client";
+
 import { Icon } from "lucide-react";
+
 
 interface Skill {
   name: string;
   icon: string;
+  devicon: string;
 }
 
 interface SkillsProps {
   className?: string;
 }
 
-// Technology icons mapping
-const getSkillIcon = (skillName: string) => {
-  const iconMap: Record<string, string> = {
-    "Next.js": "N",
-    "React": "⚛",
-    "TypeScript": "TS",
-    "JavaScript": "JS",
-    "Python": "🐍",
-    "Java": "☕",
-    "Node.js": "🟢",
-    "Express.js": "E",
-    "Spring Boot": "🌱",
-    "MongoDB": "🍃",
-    "MySQL": "🐬",
-    "PostgreSQL": "🐘",
-    "AWS": "☁️",
-    "Docker": "🐳",
-    "Kubernetes": "⚙️",
-    "React Native": "📱",
-    "Firebase": "🔥",
-    "Tailwind CSS": "🎨",
-    "HTML": "🌐",
-    "CSS": "💎"
-  };
-  return iconMap[skillName] || "💻";
-};
 
 export default function Skills({ className = "" }: SkillsProps) {
   const skills: Skill[] = [
-    { name: "Next.js", icon: "N" },
-    { name: "React", icon: "⚛" },
-    { name: "TypeScript", icon: "TS" },
-    { name: "Node.js", icon: "🟢" },
-    { name: "MongoDB", icon: "🍃" },
-    { name: "AWS", icon: "☁️" },
-    { name: "Docker", icon: "🐳" },
-    { name: "Python", icon: "🐍" },
-    { name: "Java", icon: "☕" },
-    { name: "Tailwind CSS", icon: "🎨" },
-    { name: "Firebase", icon: "🔥" },
-    { name: "Kubernetes", icon: "⚙️" }
+    { name: "Next.js", icon: "N", devicon: "devicon-nextjs-original" },
+    { name: "React", icon: "⚛", devicon: "devicon-react-original" },
+    { name: "TypeScript", icon: "TS", devicon: "devicon-typescript-original" },
+    { name: "CSS", icon: "🎨", devicon: "devicon-css3-plain" },
+    { name: "Node.js", icon: "🟢", devicon: "devicon-nodejs-plain" },
+    { name: "Python", icon: "🐍", devicon: "devicon-python-plain" },
+    { name: "Java", icon: "☕", devicon: "devicon-java-plain" },
+    { name: "MongoDB", icon: "🍃", devicon: "devicon-mongodb-plain" },
+    { name: "Firebase", icon: "🔥", devicon: "devicon-firebase-plain" },
+    { name: "Kubernetes", icon: "⚙️", devicon: "devicon-kubernetes-plain" },
+    { name: "Docker", icon: "🐳", devicon: "devicon-docker-plain" },
+    { name: "AWS", icon: "☁️", devicon: "devicon-amazonwebservices-plain" }
   ];
 
   return (
@@ -65,12 +43,24 @@ export default function Skills({ className = "" }: SkillsProps) {
         {skills.map((skill) => (
           <div
             key={skill.name}
-            className="flex flex-col items-center gap-2 rounded-lg bg-muted/50 p-4 transition-all hover:bg-muted/80 hover:scale-105"
+            className="flex w-24 flex-col items-center gap-2 rounded-lg bg-muted/50 p-4 transition-all hover:bg-muted/80 hover:scale-105"
           >
-            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-background text-2xl font-bold">
-              {skill.icon}
+            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-background">
+              <i 
+                className={`${skill.devicon} text-2xl`} 
+                style={{fontSize: '24px'}}
+                onError={(e) => {
+                  // Fallback to emoji if DevIcon fails to load
+                  const target = e.target as HTMLElement;
+                  target.style.display = 'none';
+                  const parent = target.parentElement;
+                  if (parent) {
+                    parent.innerHTML = `<span class="text-2xl font-bold">${skill.icon}</span>`;
+                  }
+                }}
+              ></i>
             </div>
-            <span className="text-sm font-medium">{skill.name}</span>
+            <span className="text-xs font-medium text-center leading-tight">{skill.name}</span>
           </div>
         ))}
       </div>
