@@ -1,6 +1,7 @@
 "use client";
 
 import { Icon } from "lucide-react";
+import { motion } from "framer-motion";
 
 
 interface Skill {
@@ -27,7 +28,7 @@ export default function Skills({ className = "" }: SkillsProps) {
     { name: "Firebase", icon: "🔥", devicon: "devicon-firebase-plain" },
     { name: "Kubernetes", icon: "⚙️", devicon: "devicon-kubernetes-plain" },
     { name: "Docker", icon: "🐳", devicon: "devicon-docker-plain" },
-    { name: "AWS", icon: "☁️", devicon: "devicon-amazonwebservices-plain" }
+    { name: "AWS", icon: "☁️", devicon: "devicon-amazonwebservices-plain-wordmark" }
   ];
 
   return (
@@ -40,10 +41,18 @@ export default function Skills({ className = "" }: SkillsProps) {
       </div>
 
       <div className="flex flex-wrap gap-4">
-        {skills.map((skill) => (
-          <div
+        {skills.map((skill, index) => (
+          <motion.div
             key={skill.name}
-            className="flex w-24 flex-col items-center gap-2 rounded-lg bg-muted/50 p-4 transition-all hover:bg-muted/80 hover:scale-105"
+            className="flex w-24 flex-col items-center gap-2 rounded-lg bg-muted/50 p-4 transition-colors hover:bg-muted/80"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ 
+              duration: 0.35,
+              delay: index * 0.06,
+              ease: "easeOut"
+            }}
+            whileHover={{ translateY: -2 }}
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-background">
               <i 
@@ -61,7 +70,7 @@ export default function Skills({ className = "" }: SkillsProps) {
               ></i>
             </div>
             <span className="text-xs font-medium text-center leading-tight">{skill.name}</span>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

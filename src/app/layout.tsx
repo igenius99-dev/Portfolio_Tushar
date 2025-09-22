@@ -10,11 +10,16 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
   weight: ["400", "500", "600", "700"],
+  display: "swap",
+  fallback: ["system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"],
 });
+
 const calistoga = Calistoga({
   subsets: ["latin"],
   variable: "--font-serif",
   weight: ["400"],
+  display: "swap",
+  fallback: ["Georgia", "Cambria", "Times New Roman", "Times", "serif"],
 });
 
 export const metadata: Metadata = {
