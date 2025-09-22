@@ -10,7 +10,6 @@ import { getEmbeddingsCollection, getVectorStore } from "../src/lib/vectordb";
 
 async function generateEmbeddings() {
   const vectorStore = await getVectorStore();
-
   // clear existing data
   (await getEmbeddingsCollection()).deleteMany({});
   (await Redis.fromEnv()).flushdb();
