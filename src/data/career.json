@@ -1,6 +1,18 @@
 {
   "career": [
     {
+      "name": "HackHarvard 2025",
+      "href": "https://devpost.com/software/carboncompass-hyqob0?_gl=1*2j7cwt*_gcl_au*MTY0MzMyOTkwNC4xNzU5MDAyOTU4*_ga*NTkxOTA2NzYyLjE3NTkwMDI5NTk.*_ga_0YHJK3Y10M*czE3NjA5MzM3OTEkbzIyJGcxJHQxNzYwOTMzOTY5JGo2MCRsMCRoMA..",
+      "title": "Winner",
+      "logo": "/img/hackharvard.png",
+      "start": "Oct 2025",
+      "end": "Oct 2025",
+      "description": [
+        "Built and deployed a cross-platform attendance app with React Native, Node.js, and Firebase, enabling 400+ drivers and supervisors to log shifts, reducing payroll discrepancies by 25%.",
+        "Developed a web dashboard using React, Express.js, and MySQL, deployed on AWS EC2 with Nginx, giving managers real-time access to attendance, saving an estimated $50K annually by reducing overtime disputes."
+      ]
+    },
+    {
       "name": "SS Transways",
       "href": "https://sstranswaysindia.com/",
       "title": "Software Engineer Intern",
