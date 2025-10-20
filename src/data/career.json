@@ -8,8 +8,9 @@
       "start": "Oct 2025",
       "end": "Oct 2025",
       "description": [
-        "Built and deployed a cross-platform attendance app with React Native, Node.js, and Firebase, enabling 400+ drivers and supervisors to log shifts, reducing payroll discrepancies by 25%.",
-        "Developed a web dashboard using React, Express.js, and MySQL, deployed on AWS EC2 with Nginx, giving managers real-time access to attendance, saving an estimated $50K annually by reducing overtime disputes."
+        "Developed a full-stack sustainable real estate intelligence platform using Next.js 15, Cloudflare Workers, and AI to analyze 2.8K+ commercial buildings in Cambridge, MA.",
+        "Implemented real-time 3D building visualization and a conversational AI interface for interactive, data-driven sustainability recommendations.",
+        "Architected a serverless microservices backend processing geospatial and environmental metrics with sub-200 ms AI responses and scalable concurrent session handling."
       ]
     },
     {
