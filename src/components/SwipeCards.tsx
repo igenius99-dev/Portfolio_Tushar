@@ -122,10 +122,14 @@ const cardData: Card[] = [
   },
   {
     id: 2,
-    url: "/img/tushar_workout.png",
+    url: "/img/tushar.JPG",
   },
   {
     id: 3,
-    url: "/img/tushar.JPG",
+    url: "/img/tushar_workout.png",
+  },
+  {
+    id: 4,
+    url: "/img/stand_mountain.jpg",
   },
 ];
