@@ -1,0 +1,14 @@
+{
+    "posts": [
+        {
+            "title": "My First Post",
+            "summary": "This is my first post",
+            "publishedAt": "2025-01-01",
+            "updatedAt": "2025-01-01",
+            "tags": ["tag1", "tag2", "tag3"],
+            "readingTime": "10 min"
+        }
+    ]
+
+
+}
