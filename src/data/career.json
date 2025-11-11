@@ -31,6 +31,7 @@
       "title": "Backend Developer",
       "logo": "/img/deptOfPhy.png",
       "start": "Apr 2023",
+      "end": "Oct 2025",
       "description": [
         "Built and deployed a space/asset management system with SQL, Node.js, Express, and AWS EC2, used by 50+ staff to support 1,000+ students, saving the department $10K+ annually.",     
         "Created RESTful APIs with Express on a secure MongoDB backend to streamline reporting and workflows, cutting manual admin work by 40%."

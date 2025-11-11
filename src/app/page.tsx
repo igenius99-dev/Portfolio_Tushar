@@ -48,11 +48,11 @@ export default async function Home() {
           </p>
 
           <p className="mt-4 max-w-sm text-balance text-sm sm:text-base">
-            Backend by trade, full-stack by passion. I build and self-host.
+          Designer by heart, full-stack by habit. I build what I imagine.
           </p>
 
           <div className="mt-6 flex items-center gap-1">
-            <p className="text-balance text-sm sm:text-base">
+            <p className="text-balance text-4xl font-semibold sm:text-base">
               For Q&A, start a chat with Tushar Support
             </p>
             <ArrowDownRight className="hidden size-5 animate-bounce sm:block" />
