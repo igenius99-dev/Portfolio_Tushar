@@ -1,16 +1,18 @@
 {
     "posts": [
+        
         {
-            "id": "my-first-post",
-            "slug": "my-first-post",
-            "title": "A little exercise, a lot of Coding: SunHacks 2025",
-            "summary": "Pythong webscraper to fetch best value cars from the internet. AI metrics to evaluate the car's condition and value.",
-            "publishedAt": "2025-09-30",
-            "updatedAt": "2025-09-30",
-            "tags": ["Python", "Next.js","Figma", "Selenium","AI","Webscraping","MapBox","Flask","PostgreSQL"],
-            "readingTime": "5 min",
+            "id": "my-third-post",
+            "slug": "my-third-post",
+            "title": "Goodbye to the department of physics",
+            "summary": "From designing and brainstorming to deploying and debugging, figma and typescript have really served me well.",
+            "publishedAt": "2025-10-27",
+            "updatedAt": "2025-10-27",
+            "tags": ["Figma", "Webspark(Drupal)", "Sheets","MongoDB","Node.js","TailwindCSS"],
+            "readingTime": "10 min",
             "draft": false
         },
+        
         {
             "id": "my-second-post",
             "slug": "my-second-post",
@@ -23,14 +25,14 @@
             "draft": false
         },
         {
-            "id": "my-third-post",
-            "slug": "my-third-post",
-            "title": "Goodbye to the department of physics",
-            "summary": "From designing and brainstorming to deploying and debugging, figma and typescript have really served me well.",
-            "publishedAt": "2025-10-27",
-            "updatedAt": "2025-10-27",
-            "tags": ["Figma", "Webspark(Drupal)", "Sheets","MongoDB","Node.js","TailwindCSS"],
-            "readingTime": "10 min",
+            "id": "my-first-post",
+            "slug": "my-first-post",
+            "title": "A little exercise, a lot of Coding: SunHacks 2025",
+            "summary": "Pythong webscraper to fetch best value cars from the internet. AI metrics to evaluate the car's condition and value.",
+            "publishedAt": "2025-09-30",
+            "updatedAt": "2025-09-30",
+            "tags": ["Python", "Next.js","Figma", "Selenium","AI","Webscraping","MapBox","Flask","PostgreSQL"],
+            "readingTime": "8 min",
             "draft": false
         }
     ]
