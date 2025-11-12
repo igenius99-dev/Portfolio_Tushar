@@ -4,16 +4,35 @@ import { PostSummary } from "@/lib/posts";
 import { formatDate } from "@/lib/utils";
 import { Calendar, Clock, Edit3 } from "lucide-react";
 import Link from "next/link";
+import postData from "@/data/post.json";
 import { Badge } from "./ui/Badge";
 import { Card } from "./ui/Card";
 
 const MAX_TAGS_DISPLAYED = 3;
 
 interface Props {
-  posts: PostSummary[];
+  posts?: PostSummary[];
+  limit?: number;
 }
 
-export default function Posts({ posts }: Props) {
+export default function Posts({ posts: postsProp, limit }: Props) {
+  // If posts are provided, use them; otherwise load from JSON
+  let posts: PostSummary[] = postsProp || postData.posts.map((p) => ({
+    id: p.id,
+    slug: p.slug,
+    title: p.title,
+    summary: p.summary,
+    publishedAt: p.publishedAt,
+    updatedAt: p.updatedAt,
+    tags: p.tags || [],
+    readingTime: p.readingTime,
+    draft: p.draft ?? false,
+  }));
+
+  // Apply limit if provided
+  if (limit) {
+    posts = posts.slice(0, limit);
+  }
   return (
     posts.length > 0 && (
       <Card className="overflow-hidden">

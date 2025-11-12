@@ -16,9 +16,9 @@
       ],
       "links": [
         {
-          "name": "GitHub",
-          "href": "https://github.com/PratGit1606/HackHarvardTTP",
-          "icon": "github"
+          "name": "Website",
+          "href": "https://hack-harvard-ttp.vercel.app",
+          "icon": "globe"
         },
         {
           "name": "Devpost",

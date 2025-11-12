@@ -3,6 +3,7 @@
 import Experience from "@/components/Experience";
 import LinkWithIcon from "@/components/LinkWithIcon";
 import Projects from "@/components/Projects";
+import Posts from "@/components/Posts";
 import Skills from "@/components/Skills";
 import Socials from "@/components/Socials";
 import SwipeCards from "@/components/SwipeCards";
@@ -53,7 +54,7 @@ export default async function Home() {
 
           <div className="mt-6 flex items-center gap-1">
             <p className="text-balance text-4xl font-semibold sm:text-base">
-              For Q&A, start a chat with Tushar Support
+              For Q&A, start a chat with Tushar Spirit
             </p>
             <ArrowDownRight className="hidden size-5 animate-bounce sm:block" />
             <ArrowDown className="block size-5 animate-bounce sm:hidden" />
@@ -116,6 +117,24 @@ export default async function Home() {
           />
         </div>
         <Projects limit={LIMIT} />
+      </motion.section>
+
+      <motion.section 
+        className="flex flex-col gap-8"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.8 }}
+      >
+        <div className="flex justify-between">
+          <h2 className="title text-2xl sm:text-3xl">Featured Posts</h2>
+          <LinkWithIcon
+            href="/posts"
+            position="right"
+            icon={<ArrowRightIcon className="size-5" />}
+            text="view more"
+          />
+        </div>
+        <Posts limit={LIMIT} />
       </motion.section>
   
     </article>
