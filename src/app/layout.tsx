@@ -43,6 +43,24 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var theme = localStorage.getItem('theme');
+                  var systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                  var resolvedTheme = theme === 'system' || !theme ? systemTheme : theme;
+                  if (resolvedTheme === 'dark') {
+                    document.documentElement.classList.add('dark');
+                  } else {
+                    document.documentElement.classList.remove('dark');
+                  }
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
