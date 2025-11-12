@@ -12,7 +12,6 @@ export default function Providers({ children }: { children: React.ReactNode }) {
       enableSystem
       attribute="class"
       defaultTheme="system"
-      suppressHydrationWarning
     >
       <ThemeColorUpdater />
       <ChatProvider>
