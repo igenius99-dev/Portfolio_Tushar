@@ -132,4 +132,8 @@ const cardData: Card[] = [
     id: 4,
     url: "/img/stand_mountain.jpg",
   },
+  {
+    id: 5,
+    url: "/img/IMG_2181.jpg",
+  }
 ];
