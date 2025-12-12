@@ -20,7 +20,9 @@ import Link from "next/link";
 
 const LIMIT = 2; // max show 2
 
-export default function Home() {
+export default async function Home() {
+
+
   return (
     <article className="mt-8 flex flex-col gap-16 pb-16">
       <section className="flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between">
