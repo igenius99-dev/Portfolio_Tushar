@@ -20,9 +20,7 @@ import Link from "next/link";
 
 const LIMIT = 2; // max show 2
 
-export default async function Home() {
-
-
+export default function Home() {
   return (
     <article className="mt-8 flex flex-col gap-16 pb-16">
       <section className="flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between">
@@ -34,7 +32,7 @@ export default async function Home() {
           <SwipeCards className="md:mr-8" />
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="flex max-w-[320px] flex-col sm:max-w-full"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -45,11 +43,11 @@ export default async function Home() {
           </h1>
 
           <p className="mt-2 whitespace-nowrap text-sm font-medium sm:text-base">
-            Software Engineer from Tempe, AZ! 
+            Software Engineer from Tempe, AZ!
           </p>
 
           <p className="mt-4 max-w-sm text-balance text-sm sm:text-base">
-          Designer by heart, full-stack by habit. I build what I imagine.
+            Designer by heart, full-stack by habit. I build what I imagine.
           </p>
 
           <div className="mt-6 flex items-center gap-1">
@@ -101,7 +99,7 @@ export default async function Home() {
         <Experience />
       </motion.div>
 
-      <motion.section 
+      <motion.section
         className="flex flex-col gap-8"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -119,7 +117,7 @@ export default async function Home() {
         <Projects limit={LIMIT} />
       </motion.section>
 
-      <motion.section 
+      <motion.section
         className="flex flex-col gap-8"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -136,7 +134,6 @@ export default async function Home() {
         </div>
         <Posts limit={LIMIT} />
       </motion.section>
-  
     </article>
   );
 }
